@@ -10,28 +10,28 @@ source:
   sha256: 2e6adebaa587f4df9241a16a4bec3fda521154d26b15f3258fde753a592831b6
 
 build:
+  number: 0
+  skip: true  # [py<38]
+  script: {{ PYTHON }} -m pip install . --no-deps --no-build-isolation -vv
   entry_points:
     - dynaconf=dynaconf.cli:main
-  noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
-  number: 0
 
 requirements:
   host:
-    - python >=3.8
-    - setuptools >=38.6.0
+    - python
+    - setuptools
     - pip
   run:
-    - python >=3.8
+    - python
 
 test:
   imports:
     - dynaconf
+  requires:
+    - pip
   commands:
     - pip check
     - dynaconf --help
-  requires:
-    - pip
 
 about:
   home: https://www.dynaconf.com/
