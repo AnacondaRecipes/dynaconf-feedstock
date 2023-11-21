@@ -21,6 +21,7 @@ requirements:
     - python
     - setuptools
     - pip
+    - wheel
   run:
     - python
 
@@ -38,7 +39,8 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: The dynamic configurator for your Python Project
+  summary: Configuration Management for Python
+  description: Configuration Management for Python
   doc_url: https://www.dynaconf.com/
   dev_url: https://github.com/rochacbruno/dynaconf
 
