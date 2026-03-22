@@ -21,7 +21,6 @@ requirements:
     - python
     - setuptools
     - pip
-    - wheel
   run:
     - python
 
@@ -35,13 +34,13 @@ test:
     - dynaconf --help
 
 about:
-  home: https://www.dynaconf.com/
+  home: https://www.dynaconf.com
   license: MIT
   license_family: MIT
   license_file: LICENSE
   summary: Configuration Management for Python
   description: Configuration Management for Python
-  doc_url: https://www.dynaconf.com/
+  doc_url: https://www.dynaconf.com
   dev_url: https://github.com/dynaconf/dynaconf
 
 extra:
