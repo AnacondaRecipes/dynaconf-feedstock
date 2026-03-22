@@ -1,13 +1,13 @@
 {% set name = "dynaconf" %}
-{% set version = "3.2.4" %}
+{% set version = "3.2.13" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 2e6adebaa587f4df9241a16a4bec3fda521154d26b15f3258fde753a592831b6
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: d79e0189d97b3f226b8ebb1717e2ce05d1a05cdf6ea05de66d24625fdb5a0cbd
 
 build:
   number: 0
@@ -42,7 +42,7 @@ about:
   summary: Configuration Management for Python
   description: Configuration Management for Python
   doc_url: https://www.dynaconf.com/
-  dev_url: https://github.com/rochacbruno/dynaconf
+  dev_url: https://github.com/dynaconf/dynaconf
 
 extra:
   recipe-maintainers:
